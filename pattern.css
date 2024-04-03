@@ -1,0 +1,61 @@
+/* when pattern is saved, the styles here will be used 
+for the new HTML or SVG file */
+.phone {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+    width: 240px;
+    border: 1px solid;
+    padding: 20px;
+}
+
+.phone>* {
+    width: 240px;
+}
+
+.patternBox {
+    border: 2px solid black;
+    height: 240px; width: 240px;
+    background: darkblue;
+    transition-duration: .5s;
+}
+
+.patternPin {
+    background: #f0f0f0;
+    font-size: 100%;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.patternControl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pattern {
+    stroke: white;
+    stroke-width: 4px;
+    fill: none;
+}
+
+circle {
+    cursor: pointer;
+    width: 20px;
+    fill: blue;
+    r: 5px;
+    transition-property: r;
+}
+
+[id*='base'] {
+    display: none;
+}
+
+[grow] {
+    r: 8px;
+}
+
+.phone [disabled] {
+    filter: grayscale(1);
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Phone Patterns</title>
+        <meta scheme="http">
+        <link rel='stylesheet' href='styles.css'>
+        <link rel='stylesheet' href='pattern.css'>
+    </head>
+    <body>
+        <h1>Phone Patterns</h1>
+        <article id=about>
+            <p>
+                The idea about this page is to simulate unlock patterns for phones.
+                <br>Although the interface does not exactly provide the simplicity of drawing patterns on phones,
+                it does try its best to imitate it, making it compatible for both mobile and PC devices.<br>
+                Future updates to the API may make it more similar to the generic mobile device pattern.
+                <a href="#help">Interface Help</a>
+            </p>
+        </article>
+        <h2>
+            Your Patterns<button id=uPatternAdd>+</button>
+            <button class=showorhide id='SOHU'>\/</button>
+        </h2>
+        <div id=userDefinedPatterns></div>
+        <h2>All Patterns
+<!--             <button id=aPatternAdd>+</button> -->
+<!--             <input type='number' min=4 max=9 value=9 id='pointsValue'> -->
+            <button class=showorhide id='SOHA'>\/</button>
+        </h2>
+        <div id=allPatterns></div>
+        <article id="help">
+            <h3>Follow this instructions to use the interface easily</h3>
+            <ol id=howto>
+                <li>Click the plus button on the "Your Patterns" section to add a new pattern.</li>
+                <li>Click the button near the previously mentioned button to collapse a section</li>
+                <li>When you click the plus button, a "phone" is created</li>
+                <li>The phone contains some parts: an input bar, a pattern box, and four buttons</li>
+                <li>The input bar takes only numeric values ranging from 0-8, each digit representing a blue point</li>
+                <li>The input bar takes only one of each numeric value from 0-8. That is, a digit cannot be written more than once</li>
+                <li>Any otherwise behaviour is an error and should be reported</li>
+                <li>The pattern box contains nine blue dots and a darkblue background</li>
+                <li>Drawing a pattern is simple:</li>
+                <li>You can input digits to the input bar to connect the dots</li>
+                <li>For example: inputing 2, 4, 1, 6 successively to the input bar will connect the
+                third, fifth, second and seventh dots respectively (note the +1 difference)</li>
+                <li>OR...</li>
+                <li>You can draw a pattern easily by clicking on the dots
+                successively. Easy, right?</li>
+                <li>Double clicking on a connected dot will disconnect it from the pattern</li>
+                <li>Now about the buttons</li>
+                <li>The "R" means Redraw; click it to clear the pattern box and click it again to restore the drawn pattern</li>
+                <li>The "A" means Animate; when clicked,
+                it clears the box and redraws it.</li>
+                <li>The "S" means Save; click it to save the pattern as an SVG (vector based) image</li>
+                <li>The "D" means Delete; click it to remove the pattern</li>
+            </ol>
+        </article>
+        <svg id=baseSVG>
+            <circle id=baseCircle></circle>
+            <path id=baseLine></path>
+        </svg>
+        <script src="scripts.js"></script>
+        <script src="pattern.js"></script>
+        <script src="phone.js"></script>
+    </body>
+</html>

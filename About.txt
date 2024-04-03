@@ -1,0 +1,9 @@
+Made By Daniel Enesi, do not copy, do not pirate.
+
+enesidaniel.120064@gmail.com, +2347010081471
+
+I used Python itertools to generate a list of "pins", and then stored them in a folder.
+I stored them so that they can be gotten immediately, instead of computed at runtime because
+that would take much time.
+Then, running on the Python HTTP server, the web project uses JavaScript to fetch
+the "pins" and display them as patterns, and also allows the user to create his or her own patterns
