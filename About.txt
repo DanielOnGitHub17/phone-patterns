@@ -1,7 +1,5 @@
 Made By Daniel Enesi, do not copy, do not pirate.
 
-enesidaniel.120064@gmail.com, +2347010081471
-
 I used Python itertools to generate a list of "pins", and then stored them in a folder.
 I stored them so that they can be gotten immediately, instead of computed at runtime because
 that would take much time.
